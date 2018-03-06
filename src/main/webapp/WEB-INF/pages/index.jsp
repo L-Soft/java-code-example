@@ -33,5 +33,35 @@
 </head>
 <body>
     <p>${someAttribute}</p>
+    <input type="text" class="Textinput" id="txt0">
+    <button class="Button" id="button1">Button1</button>
+    <button class="Button" id="button2">Button2</button>
+    <button class="Button" id="button3" data-disabled="true">Button3</button>
 </body>
+<script>
+    $a.page(function () {
+        this.init = function () {
+            return "init";
+        };
+        console.log(this.init());
+
+        var button = function (self) {
+            if (self !== null && self !== undefined) {
+                console.log($(self)[0].innerHTML);
+            }
+        };
+
+        $("#button1").click(function () {
+            button(this);
+        });
+
+        $("#button2").click(function () {
+            button(this);
+        });
+
+        $("#button3").click(function () {
+            button(this);
+        });
+    })
+</script>
 </html>
