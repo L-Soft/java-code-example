@@ -6,10 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
-
     @RequestMapping("/")
     public String index (Model model) {
         model.addAttribute("someAttribute", "someValue");
         return "index";
+    }
+
+    @RequestMapping("/todoList")
+    public String todoList (Model model) {
+        return "todolist";
     }
 }

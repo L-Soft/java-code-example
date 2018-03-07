@@ -8,12 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <meta http-qeuiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-qeuiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
     <link rel="stylesheet" type="text/css" href="/resources/css/alopex-ui-dark.css" />
-    <link rel="stylesheet" type="text/css" href="/resources/css/alopex-ui-dark-gradation.css" />
 
     <script type="text/javascript" src="/resources/script/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="/resources/script/alopex-ui.min.js"></script>
+
+    <script type="text/javascript" src="/resources/script/pages/index.js"></script>
 
     <!-- FileUpload, MultiSelect, Splitter 컴포넌트 사용 시 -->
     <!--
@@ -30,13 +33,15 @@
     <script type="text/javascript" src="/resources/script/src/webeditor/alopex-webeditor.min.js" />
     <script type="text/javascript" src="/resources/script/src/webeditor/alopex-webeditor-setup.js" />
     -->
+    <title>AlopexUI_Beginner</title>
 </head>
 <body>
-    <p>${someAttribute}</p>
-    <input type="text" class="Textinput" id="txt0">
-    <button class="Button" id="button1">Button1</button>
-    <button class="Button" id="button2">Button2</button>
-    <button class="Button" id="button3" data-disabled="true">Button3</button>
+    <from>
+        <label>
+            <input id="name" class="Textinput" data-validation-rule="{required: true}" data-validation-message="{required: '이름을 입력해주세요.'}">
+            <input id="next" class="Button" value="조회">
+        </label>
+    </from>
 </body>
 <script>
     $a.page(function () {
