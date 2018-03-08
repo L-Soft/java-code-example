@@ -1,2 +1,6 @@
 .idea
 target
+
+# IntelliJ IDE Project Files #
+*.iml
+*.idea

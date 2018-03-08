@@ -4,13 +4,25 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!--
     <mvc:annotation-driven />
+    -->
+    <!-- RequestMappingHandlerMapping, RequestMappingHandlerAdapter -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
     <context:component-scan base-package="com.lsoft"></context:component-scan>
 
+    <!--
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-    
+    -->
+
+    <bean class="com.github.jknack.handlebars.springmvc.HandlebarsViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/" />
+        <property name="suffix" value=".hbs" />
+    </bean>
+
     <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
 </beans>
