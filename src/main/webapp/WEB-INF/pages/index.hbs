@@ -8,8 +8,6 @@
     <script type="text/javascript" src="/resources/script/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="/resources/script/alopex-ui.min.js"></script>
 
-    <script type="text/javascript" src="/resources/script/pages/index.js"></script>
-
     <!-- FileUpload, MultiSelect, Splitter 컴포넌트 사용 시 -->
     <!--
     <link rel="stylesheet" type="text/css" href="/resources/css/src/alopex-ext.css" />
@@ -35,30 +33,5 @@
         </label>
     </from>
 </body>
-<script>
-    $a.page(function () {
-        this.init = function () {
-            return "init";
-        };
-        console.log(this.init());
-
-        var button = function (self) {
-            if (self !== null && self !== undefined) {
-                console.log($(self)[0].innerHTML);
-            }
-        };
-
-        $("#button1").click(function () {
-            button(this);
-        });
-
-        $("#button2").click(function () {
-            button(this);
-        });
-
-        $("#button3").click(function () {
-            button(this);
-        });
-    })
-</script>
+<script type="text/javascript" src="/resources/script/pages/index.js"></script>
 </html>
