@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta http-qeuiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-qeuiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" type="text/css" href="/resources/css/alopex-ui-dark.css" />
+
+    <script type="text/javascript" src="/resources/script/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="/resources/script/alopex-ui.min.js"></script>
+    <title>AlopexUI_Beginner</title>
+</head>
+<body>
+<div class="Tabs">
+    <ul>
+        <li data-content="#tab1">tab1</li>
+        <li data-content="#tab2">tab2</li>
+        <li data-content="#tab3">tab3</li>
+    </ul>
+    <div id="tab1"><h3>tab1</h3>tab1 내용</div>
+    <div id="tab2"><h3>tab2</h3>tab2 내용</div>
+    <div id="tab3"><h3>tab3</h3>tab3 내용</div>
+</div>
+</body>
+<script>
+    $a.page(function () {
+        this.init = function () {
+            $('.Tabs').on('tabchange', function (e, index, index2) {
+                console.log(e, index, index2);
+            });
+
+            $('.Tabs').setTabIndex(3);
+        };
+    });
+</script>
+</html>
