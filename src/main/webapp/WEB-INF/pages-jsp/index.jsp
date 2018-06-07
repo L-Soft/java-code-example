@@ -16,10 +16,16 @@
 <body>
 
 <c:set var="title" value="catsSoft" />
-<h1>debug: <c:out value="${title}"/></h1>
+<h1>debug: <c:out value="${jsonArray}"/></h1>
 <%
-     System.out.println(pageContext.findAttribute("title"));
+     System.out.println(pageContext.findAttribute("jsonArray"));
 %>
+
+<script>
+    ((_jsonArray) => {
+        console.log(_jsonArray);
+    })(${jsonArray});
+</script>
 
 </body>
 </html>

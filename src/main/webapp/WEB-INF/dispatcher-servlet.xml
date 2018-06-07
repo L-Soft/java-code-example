@@ -22,6 +22,8 @@
         <property name="suffix" value=".hbs" />
     </bean>-->
 
-    <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"></bean>
+    <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+        <property name="contentType" value="application/json;charset=UTF-8"></property>
+    </bean>
     <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
 </beans>
