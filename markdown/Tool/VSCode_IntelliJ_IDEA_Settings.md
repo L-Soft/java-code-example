@@ -29,6 +29,7 @@ http://forgiveall.tistory.com/405
 1. vscode-icons
 1. markdownlint
 1. Debugger for Chrome
+1. vscode-intellij-idea-keybindings
 
 
 ## VSCode 에디터 세팅
