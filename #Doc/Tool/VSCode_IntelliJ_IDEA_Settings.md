@@ -15,6 +15,11 @@
 1. Java Stream Debugger
 1. JVM Debuggger Memory View
 
+## IntelliJ Column 수정
+~~~ bash
+Settings > Code style, Hard wrap at (120, default) columns [] Wrap on typing
+~~~
+
 ## IntelliJ, 메모리 할당량 늘리기
 
 메모리 할당하는 방법이 정리된 사이트
