@@ -24,3 +24,5 @@ Settings > Code style, Hard wrap at (120, default) columns [] Wrap on typing
 http://forgiveall.tistory.com/405
 ```
 
+contains, indexOf, matches: http://fruitdev.tistory.com/72
+Oralce - Table Comment 조회:http://lilymate.tistory.com/275

@@ -31,4 +31,13 @@ Ctrl + F7
 도구 > 환경 설정 > 데이터 베이스 > NLS > 날짜 형식
 ~~~
 
+## SQL Oralce Developer 한글 깨짐 현상
+한글 주석이 깨짐는 문제때문에 찾아보니, 역시나 UTF-8 문제때문에 발생한 문제라서 해결책을 기록한다. UTF-8로 변경하면 한글깨짐을 안 볼 수 있다. 아래의 그림처럼 변경하면 된다.
+
+~~~bash
+도구 > 환경 설정 > 환경 > 인코딩:UTF-8로 변경 
+~~~
+
+![개발자 도구 오라클](https://raw.githubusercontent.com/L-Soft/java-code-example/master/%23Doc/Image/img_20180703_221532_01.png)
+
 출처: http://yangyag.tistory.com/151?category=793732
